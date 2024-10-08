@@ -1,0 +1,17 @@
+.model DEMUX_PRIMOSECONDO
+.inputs SEL A1 A0
+.outputs X1 X0 Y1 Y0
+# I BIT Y1 E Y0 SERVONO PER PRENDERE LA "STRADA" CHE SETTA IL MAX (INIZIA=1).
+.names SEL A1 A0 X1
+01- 1
+
+.names SEL A1 A0 X0
+0-1 1
+
+.names SEL A1 A0 Y1
+11- 1
+
+.names SEL A1 A0 Y0
+1-1 1
+
+.end

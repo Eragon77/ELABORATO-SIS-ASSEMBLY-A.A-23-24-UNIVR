@@ -1,0 +1,33 @@
+.model comparatore_min
+.inputs A4 A3 A2 A1 A0
+.outputs OUT
+
+.subckt COST_0 o=B0
+.subckt COST_0 o=B1
+.subckt COST_0 o=B2
+.subckt COST_0 o=B3
+.subckt COST_0 o=B4
+
+.subckt NOR A=A0 B=B0 OUT=X0
+.subckt NOR A=A1 B=B1 OUT=X1
+.subckt NOR A=A2 B=B2 OUT=X2
+.subckt NOR A=A3 B=B3 OUT=X3
+.subckt NOR A=A4 B=B4 OUT=X4
+
+.subckt COST_1 o=W
+.subckt OR A=X0 B=X1 OUT=Y
+.subckt OR A=Y B=W OUT=Z0
+.subckt AND A=X2 B=X3 OUT=O 
+.subckt AND A=O B=X4 OUT=Z1
+.subckt AND A=Z1 B=Z0 OUT=OUT
+
+
+
+
+.search COST_0.blif
+.search COST_1.blif
+.search NOR.blif
+.search OR.blif
+.search AND.blif
+
+.end

@@ -1,0 +1,7 @@
+.model NOR
+.inputs A B 
+.outputs OUT 
+
+.names A B OUT 
+00 1
+.end

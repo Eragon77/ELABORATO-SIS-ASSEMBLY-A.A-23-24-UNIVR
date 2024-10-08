@@ -1,0 +1,22 @@
+.model comparatore_setmax
+.inputs A4 A3 A2 A1 A0 B4 B3 B2 B1 B0 #i bit di A sono del contatore delle manche, mentre i bit di B sono del setmax
+.outputs OUT
+
+.subckt XNOR A=A4 B=B4 X=X4
+.subckt XNOR A=A3 B=B3 X=X3
+.subckt XNOR A=A2 B=B2 X=X2
+.subckt XNOR A=A1 B=B1 X=X1
+.subckt XNOR A=A0 B=B0 X=X0
+
+.subckt AND A=X4 B=X3 OUT=I3
+.subckt AND A=I3 B=X2 OUT=I2
+.subckt AND A=I2 B=X1 OUT=I1
+.subckt AND A=I1 B=X0 OUT=I0
+
+.subckt NOT A=I0 OUT=OUT
+
+.search NOT.blif
+.search AND.blif
+.search XNOR.blif
+
+.end

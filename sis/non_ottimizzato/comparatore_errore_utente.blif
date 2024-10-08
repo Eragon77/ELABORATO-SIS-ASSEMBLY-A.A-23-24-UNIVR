@@ -1,0 +1,21 @@
+.model comparatore_errore_utente
+.inputs A4 A3 A2 A1 A0
+.outputs OUT
+
+.subckt COST_0 o=O
+
+.subckt NOR A=A4 B=O OUT=X4
+.subckt NOR A=A3 B=O OUT=X3
+.subckt NOR A=A2 B=O OUT=X2
+.subckt NOR A=A1 B=O OUT=X1
+.subckt NOR A=A0 B=O OUT=X0
+
+.subckt AND A=X4 B=X3 OUT=I2
+.subckt AND A=I2 B=X2 OUT=I1
+.subckt AND A=I1 B=X1 OUT=I0
+.subckt AND A=I0 B=X0 OUT=OUT
+
+.search AND.blif
+.search NOR.blif
+.search COST_0.blif
+.end

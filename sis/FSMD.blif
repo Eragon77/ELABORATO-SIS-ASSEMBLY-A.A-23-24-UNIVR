@@ -1,0 +1,169 @@
+.model FSMD_no
+.inputs PRIMO1 PRIMO0 SECONDO1 SECONDO0 INIZIA
+.outputs MANCHE1 MANCHE0 PARTITA1 PARTITA0
+.latch    [26] LatchOut_v5   1
+.latch    [27] LatchOut_v6   1
+.latch    [28] LatchOut_v7   0
+.latch    OUT1_MUX_REG2 OUT_REG2_1 fe NIL 0
+.latch    OUT0_MUX_REG2 OUT_REG2_0 fe NIL 0
+.latch    OUT1_MUX_REG1 OUT1_REG_1 fe NIL 0
+.latch    OUT0_MUX_REG1 OUT0_REG_1 fe NIL 0
+.latch    O4 OUT_REG_C4 re NIL 0
+.latch    O3 OUT_REG_C3 re NIL 0
+.latch    O2 OUT_REG_C2 re NIL 0
+.latch    O1 OUT_REG_C1 re NIL 0
+.latch    O0 OUT_REG_C0 re NIL 0
+.latch    OUT_MUX_S4 OUT_REG_S4 re NIL 0
+.latch    OUT_MUX_S3 OUT_REG_S3 re NIL 0
+.latch    OUT_ERR_2 OUT_REG_S2 re NIL 0
+.latch    OUT_MUX_S1 OUT_REG_S1 re NIL 0
+.latch    OUT_MUX_S0 OUT_REG_S0 re NIL 0
+.names PRIMO1 PRIMO0 SECONDO1 SECONDO0 OUT_VAL_FINE R0 MANCHE1
+----00 1
+-01-0- 1
+-10-0- 1
+1-110- 1
+.names OUT_VAL_FINE R0 MANCHE0
+01 1
+.names MANCHE1 MANCHE0 LatchOut_v5 LatchOut_v6 LatchOut_v7 [28] I0 [465] \
+PARTITA1
+----1-1- 1
+1-1---1- 1
+-0-1--1- 1
+----10-1 1
+.names MANCHE1 MANCHE0 LatchOut_v5 LatchOut_v6 LatchOut_v7 I0 [449] [470] \
+PARTITA0
+--0--1-- 1
+0--1-1-- 1
+-1--01-- 1
+--0---01 1
+1-00---1 1
+.names INIZIA PARTITA0 LatchOut_v5 LatchOut_v6 LatchOut_v7 [449] [471] [26]
+1------ 1
+-1----- 1
+----1-- 1
+--1--1- 1
+---1--1 1
+.names MANCHE0 LatchOut_v5 LatchOut_v6 LatchOut_v7 [28] I0 [405] [449] [466] \
+[470] [27]
+----1--0-- 1
+--1-----0- 1
+1-1-1----- 1
+--10-0-1-- 1
+-11--0-0-- 1
+0---0-0--0 1
+.names INIZIA MANCHE1 MANCHE0 LatchOut_v5 LatchOut_v6 LatchOut_v7 I0 [465] \
+[466] [470] [471] [28]
+0----1--0-- 1
+-----1-1-0- 1
+---1-00---1 1
+-11-110---- 1
+.names PRIMO1 PRIMO0 SECONDO1 SECONDO0 OUT_OR_FINE OUT_REG2_1 OUT_REG2_0 \
+OUT1_REG_1 OUT0_REG_1 OUT_VAL_FINE
+----1---- 1
+00------- 1
+--00----- 1
+-----0011 1
+-----1100 1
+11---0-11 1
+--11--011 1
+0----0101 1
+--0--1001 1
+-0---0110 1
+---0-1010 1
+.names PRIMO1 PRIMO0 SECONDO0 [473] R0
+1-0- 1
+-0-0 1
+-111 1
+.names OUT_MUX_S1 OUT_MUX_S0 OUT_ERR_2 O2 O1 O0 [460] [461] I0
+11111111 1
+11001111 1
+01110111 1
+01000111 1
+10111011 1
+10001011 1
+00110011 1
+00000011 1
+.names INIZIA LatchOut_v5 LatchOut_v6 LatchOut_v7 OUT_OR_FINE
+1--- 1
+-100 1
+.names PRIMO1 PRIMO0 INIZIA OUT_REG_S4 OUT_REG_S3 OUT_REG_S2 OUT_MUX_S4
+111--- 1
+--0100 1
+.names PRIMO1 PRIMO0 INIZIA OUT_REG_S4 OUT_REG_S3 OUT_MUX_S3
+011-- 1
+101-- 1
+--001 1
+.names SECONDO1 INIZIA OUT_REG_S1 [467] OUT_MUX_S1
+11-- 1
+-011 1
+.names SECONDO0 INIZIA OUT_REG_S0 [467] OUT_MUX_S0
+11-- 1
+-011 1
+.names PRIMO0 INIZIA OUT_MUX_S4 OUT_REG_S2 OUT_MUX_S3 OUT_ERR_2
+01--- 1
+-0-1- 1
+--0-0 1
+.names OUT_OR_FINE O3 OUT_REG_C4 OUT_REG_C3 O4
+-11- 1
+0-10 1
+0001 1
+.names OUT_OR_FINE O2 OUT_REG_C3 OUT_REG_C2 O3
+-11- 1
+0-10 1
+0001 1
+.names OUT_OR_FINE O1 OUT_REG_C2 OUT_REG_C1 O2
+-11- 1
+0-10 1
+0001 1
+.names OUT_OR_FINE OUT_REG_C1 OUT_REG_C0 [405] [466] O1
+-1-1- 1
+010-- 1
+-01-1 1
+.names OUT_REG_C0 [405] [466] O0
+11- 1
+0-1 1
+.names OUT_REG2_1 [405] [471] OUT1_MUX_REG2
+--1 1
+11- 1
+.names OUT_REG2_0 [405] [449] OUT0_MUX_REG2
+--0 1
+11- 1
+.names PRIMO1 SECONDO1 OUT1_REG_1 [405] [449] [471] OUT1_MUX_REG1
+--11-- 1
+1---0- 1
+-1---1 1
+.names PRIMO0 SECONDO0 OUT0_REG_1 [405] [449] [471] OUT0_MUX_REG1
+--11-- 1
+1---0- 1
+-1---1 1
+.names OUT_OR_FINE [466] [405]
+00 1
+.names MANCHE1 MANCHE0 [449]
+1- 1
+-0 1
+.names OUT_MUX_S4 O4 [460]
+11 1
+00 1
+.names OUT_MUX_S3 O3 [461]
+11 1
+00 1
+.names MANCHE1 MANCHE0 LatchOut_v6 [465]
+1-- 1
+-10 1
+.names MANCHE1 MANCHE0 [466]
+1- 1
+-1 1
+.names OUT_REG_S4 OUT_REG_S2 OUT_ERR_2 [467]
+--0 1
+01- 1
+.names O4 O3 O2 [470]
+1-- 1
+-1- 1
+--1 1
+.names MANCHE1 MANCHE0 [471]
+10 1
+.names PRIMO1 SECONDO1 [473]
+0- 1
+-1 1
+.end

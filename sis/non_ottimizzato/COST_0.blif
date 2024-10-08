@@ -1,0 +1,4 @@
+.model COST_0
+.outputs o
+.names o
+.end

@@ -1,0 +1,23 @@
+.model risultato_manche
+.inputs P1 P0 S1 S0 
+.outputs M1 M0
+
+.names P1 P0 S1 S0 M1 #NOMI DI ENTRATE E USCITE PER M1
+ 
+0101 1
+0110 1
+1010 1
+1011 1
+1101 1
+1111 1
+
+.names P1 P0 S1 S0 M0 #NOMI DI ENTRATE E USCITE PER M0
+
+0101 1
+0111 1
+1001 1
+1010 1
+1110 1
+1111 1
+
+.end

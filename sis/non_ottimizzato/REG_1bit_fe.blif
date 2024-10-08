@@ -1,0 +1,7 @@
+.model REG_1bit_fe
+.inputs A
+.outputs OUT
+
+.latch A OUT fe NIL 0
+.end
+

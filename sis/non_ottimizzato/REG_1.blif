@@ -1,0 +1,10 @@
+.model REG_1
+.inputs A1 A0
+.outputs OUT1 OUT0
+
+.subckt REG_1bit_fe A=A1 OUT=OUT1 
+.subckt REG_1bit_fe A=A0 OUT=OUT0
+
+
+.search REG_1bit_fe.blif
+.end

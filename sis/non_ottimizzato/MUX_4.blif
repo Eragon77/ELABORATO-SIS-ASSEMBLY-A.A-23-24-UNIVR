@@ -1,0 +1,15 @@
+.model MUX_4
+.inputs X1 X0 B1 B0 C1 C0
+.outputs OUT1 OUT0
+
+.subckt COST_1 o=A1 
+.subckt COST_1 o=A0
+.subckt COST_0 o=D1
+.subckt COST_0 o=D0
+
+.subckt MUX_4i_1b_MUX2_MUX3_MUX4 S1=X1 S0=X0 i3=A1 i2=B1 i1=C1 i0=D1 OUT=OUT1
+.subckt MUX_4i_1b_MUX2_MUX3_MUX4 S1=X1 S0=X0 i3=A0 i2=B0 i1=C0 i0=D0 OUT=OUT0
+.search MUX_4i_1b_MUX2_MUX3_MUX4.blif
+.search COST_1.blif
+.search COST_0.blif
+.end

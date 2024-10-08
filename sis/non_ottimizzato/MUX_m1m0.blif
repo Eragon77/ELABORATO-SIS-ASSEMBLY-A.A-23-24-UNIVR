@@ -1,0 +1,13 @@
+.model MUX_m1m0
+.inputs SEL M
+.outputs OUT
+
+.subckt COST_0 o=A
+.names SEL M A OUT
+010 1
+
+
+
+
+.search COST_0.blif
+.end

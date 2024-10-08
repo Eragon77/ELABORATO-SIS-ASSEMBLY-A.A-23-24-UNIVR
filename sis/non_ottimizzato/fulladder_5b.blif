@@ -1,0 +1,12 @@
+.model fulladder_5b
+.inputs A4 A3 A2 A1 A0 B4 B3 B2 B1 B0 CIN
+.outputs OUT4 OUT3 OUT2 OUT1 OUT0 COUT
+
+.subckt adder A=A0 B=B0 CIN=CIN OUT=OUT0 COUT=C0
+.subckt adder A=A1 B=B1 CIN=C0 OUT=OUT1 COUT=C1
+.subckt adder A=A2 B=B2 CIN=C1 OUT=OUT2 COUT=C2
+.subckt adder A=A3 B=B3 CIN=C2 OUT=OUT3 COUT=C3
+.subckt adder A=A4 B=B4 CIN=C3 OUT=OUT4 COUT=COUT
+.search adder.blif
+
+.end

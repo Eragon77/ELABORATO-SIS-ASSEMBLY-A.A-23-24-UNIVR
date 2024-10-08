@@ -1,0 +1,18 @@
+.model MUX_REG1REG2
+.inputs SEL M1 M0
+.outputs OUT1 OUT0
+
+.subckt COST_0 o=B0
+.subckt COST_0 o=B1
+
+
+
+
+.names SEL M1 M0 B1 B0 OUT1
+01-00 1
+
+.names SEL M1 M0 B1 B0 OUT0
+0-100 1
+
+.search COST_0.blif
+.end

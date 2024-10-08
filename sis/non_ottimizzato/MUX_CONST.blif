@@ -1,0 +1,16 @@
+.model MUX_CONST
+.inputs SEL
+.outputs OUT4 OUT3 OUT2 OUT1 OUT0
+#SELEZIONO 0 OPPURE 1
+.names SEL OUT4
+- 0
+.names SEL OUT3
+- 0
+.names SEL OUT2
+- 0
+.names SEL OUT1
+- 0
+.names SEL OUT0
+1 0
+
+.end

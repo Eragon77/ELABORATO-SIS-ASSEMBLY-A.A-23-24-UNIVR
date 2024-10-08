@@ -1,0 +1,12 @@
+.model MUX_1
+.inputs SEL M1 M0 M1_LAST M0_LAST 
+.outputs OUT1 OUT0
+
+.names SEL M1 M0 M1_LAST M0_LAST OUT1
+001-- 0
+1--01 0
+
+.names SEL M1 M0 M1_LAST M0_LAST OUT0
+010-- 0
+1--10 0
+.end
